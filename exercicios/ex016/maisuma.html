@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIO I GO AHGAIN</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: darkorange;
+            font-weight: bold;
+
+        }
+
+        a:hover {
+            color: darkred;
+            text-decoration: underline;
+
+        }
+
+        a:active {
+            color: darkgreen;
+        }
+
+        a::after {
+            content: ' Aqui ;)';
+            color: black;
+        }
+
+        .spinner{
+            width: 80px;
+            height: 80px;
+            border: 20px solid rgba(0, 0, 0, 0.);
+            border-top-color: darkred;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin{
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Visitando sites</h1>
+
+    <ul>
+        <li><a href="https://youtube.com" target="_blank" rel="externe">Acesse o Youtube</a></li>
+        <li><a href="https://google.com" target="_blank" rel="externe">Acesse o Google</a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="externe">Acesse o Facebook</a></li>
+    </ul>
+
+     <div class="spinner">
+
+     </div>
+</body>
+</html>
