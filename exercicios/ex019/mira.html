@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando uma mira</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        #q1 {
+            background-color: lightgray;
+            height: 100vh;
+            background-image: url('imagens/target001.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+        #q2 {
+            background-color: red   ;
+            background-image: url('imagens/target001.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            transition: 0.4s;
+        }
+
+        #q2:hover {
+            border: 5px solid darkred;
+            box-shadow: 0px 0px 15px darkred;
+            transform: scale(1.10);
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section id="q1">
+
+        <article id="q2">
+
+        </article>
+
+    </section>
+    
+</body>
+</html>
