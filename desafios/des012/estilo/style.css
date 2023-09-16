@@ -70,10 +70,22 @@ section.img {
     background-color: rgb(71, 71, 71);
 }
 
+section#imagem1 {
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#imagem2 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 section.img  p {
     display: inline-block;
     padding: 10px;
-    background-color: #000;
+    background-color: #0000005b;
     color: white;
 }
 
