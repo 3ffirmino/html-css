@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Da mesma cor e estilo</title>
+    <style>
+
+        table {
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .name {
+            background-image: linear-gradient(to bottom, red, darkred);
+        }
+
+        col.age {
+            background-image: linear-gradient(to bottom, lightblue, darkblue);
+        }
+
+        col.city {
+            background-image: linear-gradient(to bottom, lightyellow, yellow);
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <colgroup>
+            <col class="name">
+            <col class="age">
+            <col class="city">
+        </colgroup>
+
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>23</td>
+            <td>Tarrafas</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>23</td>
+            <td>Tarrafas</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>23</td>
+            <td>Tarrafas</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>23</td>
+            <td>Tarrafas</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
