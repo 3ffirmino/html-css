@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite da prova</title>
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            border-radius: 15px;
+        }
+
+
+        form  .botoes {
+            padding-top: 50px;
+        }
+
+        form .botoes > input {
+            display: block;
+            margin: auto;
+            width: 90%;
+            border-radius: 15px;
+            padding: 5px;
+            margin-top: 10px;
+            
+        }
+
+        form .outros {
+            padding-top: 30px;
+            
+        }
+
+        form .outros > input {
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 50px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Digite seus dados e horarios da prova aqui.</h1>
+
+    <form action="cadsstro.php" autocomplete="on">
+
+            <div class="botoes">
+                <input type="text" name="name" id="iname" required placeholder="Your Name" autocomplete="name">
+                <input type="number" name="nota" id="inota" required placeholder="Your Nota" min="0" max="10" step="0.1">
+                <input type="time" name="time" id="itime" required>
+                <input type="date" name="date" id="idate" required>
+            </div>
+
+            <div class="outros">
+                <input type="submit" value="Enviar">
+            </div>
+
+    </form>
+</body>
+</html>
