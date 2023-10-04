@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco mais sobre formularios</title>
+    <style>
+
+        form {
+            background-color: lightgray;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+
+        form .puts {
+            display: block;
+            text-align: center;
+            padding-top: 80px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div class="puts">
+            <p>
+                <label for="inome">Name:</label>
+                <input type="text" name="nome" id="inome" placeholder="Name" minlength="8" maxlength="15" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Password:</label>
+                <input type="password" name="senha" id="isenha" placeholder="Password" minlength="4" maxlength="20" autocomplete="current-password">
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+
+        </div>
+
+    </form>
+
+</body>
+</html>
