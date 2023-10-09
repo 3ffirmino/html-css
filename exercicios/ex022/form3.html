@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Form</title>
+    <style>
+        form input {
+
+            margin: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form</h1>
+
+    <form action="cadstro.php" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados do Cadastro</legend>
+            <label for="email">Email:</label>
+            <input type="email" required name="Email" id="email" placeholder="Email" autocomplete="email">
+            <label for="telefone">Contact:</label>
+            <input type="tel" required name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" autocomplete="tel">
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
