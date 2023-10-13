@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 06</title>
+</head>
+<body>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <label for="iestados">Estados: </label>
+        <select name="estados" id="iestados">
+
+            <option value="">Estados</option>
+            <optgroup label="Região Nordeste">
+
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="SE">Sergipe</option>
+
+            </optgroup>
+            <optgroup label="Região Sudeste">
+
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+
+            </optgroup>
+
+        </select>
+
+        <p>
+            <label for="iesporte">Esporte: </label>
+            <input type="text" name="esporte" id="iesporte" list="esp">
+            <datalist id="esp">
+                <option>Futebol</option>
+                <option>Basquete</option>
+                <option>Vôlei</option>
+                <option>Tênis</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="itext">Sua Opnião: </label> <br>
+            <textarea name="text" id="itext" cols="50" rows="8" placeholder="Digite aqui sua opnião..."></textarea>
+        </p>
+       
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
