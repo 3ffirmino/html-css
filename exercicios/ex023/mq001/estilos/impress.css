@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* Estilo da Impressora */
+
+* {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+menu {
+    display: none;
+}
+
+main article h2 {
+    margin: 20px 10px;
+}
+
+main article p {
+    text-align: justify;
+    margin: 20px 10px;
+}
+
+article::after {
+    content: 'Olá esse teste de aquivo foi criado em 26/10/2023';
+}
