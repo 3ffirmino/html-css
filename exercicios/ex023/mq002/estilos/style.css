@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Style Geral */
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1, p {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 0px #0000004e;
+}
+
+span {
+    color: #ffff00;
+}
