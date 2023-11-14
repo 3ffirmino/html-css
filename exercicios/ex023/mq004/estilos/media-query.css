@@ -1,2 +1,100 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints  
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+
+*/
+
+/* ALL MEDIAS */
+
+@media print {
+    
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #fff;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid #000;
+    }
+
+    main::after {
+        content: "Parabéns você é um GÊNIO !!!";
+    }
+
+    main h1 {
+        color: #000;
+    }
+
+    img#phone { display: none; }
+
+    img#tablet { display: none; }
+
+    img#pc { display: none; }
+
+    img#tv {  display: none; }
+
+    img#print { display: block; }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* Ipads and Tablets */
+
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone { display: none; }
+
+    img#tablet { display: block; }
+
+    img#pc { display: none; }
+
+    img#tv {  display: none; }
+
+    img#print { display: none; }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /* Desktops */
+
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone { display: none; }
+
+    img#tablet { display: none; }
+
+    img#pc { display: block; }
+
+    img#tv {  display: none; }
+
+    img#print { display: none; }
+
+
+}
+
+@media screen and (min-width: 1201px) { /* TV's */
+
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    img#phone { display: none; }
+
+    img#tablet { display: none; }
+
+    img#pc { display: none; }
+
+    img#tv {  display: block; }
+
+    img#print { display: none; }
+
+}
