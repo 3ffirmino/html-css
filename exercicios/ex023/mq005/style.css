@@ -12,10 +12,11 @@ body {
 }
 
 header {
-    background-color: gray;
+    background-color: lightgray;
 }
 
 header span.material-icons {
+    cursor: pointer;
     display: block;
     text-align: center;
     color: #fff;
@@ -26,18 +27,20 @@ header span.material-icons {
 header h1 {
     text-align: center;
     padding: 10px;
+    color: #260101;
 }
 
 menu {
     display: none;
-    background-color: #535353;
+    background-color: lightgray;
 }
 
 menu a {
+    font-weight: bold;
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #a1a1a1;
+    background-color: #275950;
     border-top: 1px solid gray;
     text-decoration: none;
     color: #fff;
@@ -45,7 +48,8 @@ menu a {
 }
 
 menu a:hover {
-    background-color: #434343;
+    background-color: #275950c3;
+    color: #ffffffc3;
 }
 
 main {
@@ -58,6 +62,7 @@ main {
 
 main article h2 {
     padding: 10px 20px;
+    color: #260101;
 }
 
 main article p {

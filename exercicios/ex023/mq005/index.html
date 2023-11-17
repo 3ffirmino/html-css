@@ -6,21 +6,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ainda não sei</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/media.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
 
-        <h1>Novo site</h1>
+        <h1>Fofocalizando</h1>
 
         <span class="material-icons" onclick="clickMenu()" >menu</span>
 
         <menu id="itens">
 
-            <a href="#">Opção 1</a></li>
-            <a href="#">Opção 2</a></li>
-            <a href="#">Opção 3</a></li>
-            <a href="#">Opção 4</a></li>
+            <a href="#">Home</a></li>
+            <a href="#">Mais Fofocas</a></li>
+            <a href="#">Menu</a></li>
+            <a href="#">Ajuda</a></li>
             
         </menu>
 
@@ -29,7 +30,7 @@
 
         <article>
 
-            <h2>Testando essasa bomba</h2>
+            <h2>Tudo sobre essa fofoca que está BOMBANDO !</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci architecto iste facilis quia magni cumque dicta et, consequuntur necessitatibus, eum amet quisquam, tempore exercitationem sequi vel voluptatibus blanditiis alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam harum ex rerum corporis cumque vitae ipsa dolorem fugiat? Sit quasi quos at voluptate adipisci corrupti culpa. Facere, animi. Itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusantium fuga dignissimos natus, eius minus fugit. Quibusdam quos illo sed, quaerat, reiciendis maiores, optio beatae quis ipsa ducimus ipsam ex?</p> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci architecto iste facilis quia magni cumque dicta et, consequuntur necessitatibus, eum amet quisquam, tempore exercitationem sequi vel voluptatibus blanditiis alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam harum ex rerum corporis cumque vitae ipsa dolorem fugiat? Sit quasi quos at voluptate adipisci corrupti culpa. Facere, animi. Itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusantium fuga dignissimos natus, eius minus fugit. Quibusdam quos illo sed, quaerat, reiciendis maiores, optio beatae quis ipsa ducimus ipsam ex?</p> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci architecto iste facilis quia magni cumque dicta et, consequuntur necessitatibus, eum amet quisquam, tempore exercitationem sequi vel voluptatibus blanditiis alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam harum ex rerum corporis cumque vitae ipsa dolorem fugiat? Sit quasi quos at voluptate adipisci corrupti culpa. Facere, animi. Itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusantium fuga dignissimos natus, eius minus fugit. Quibusdam quos illo sed, quaerat, reiciendis maiores, optio beatae quis ipsa ducimus ipsam ex?</p> 
@@ -39,6 +40,15 @@
     </main>
     
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display ='block'
+            } else {
+                intens.style.display ='none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
