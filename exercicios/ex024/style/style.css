@@ -7,9 +7,51 @@
 }
 
 body {
+    background-color: #034159;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #00000096;
+    width: 90vw;
+    height: 80vh;
+    width: 480px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
 
-img {
-    width: 200px;
+main .developerimage {
+    width: 480px;
+    height: 30vh;
+    background-image: url('../image/developer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+main .text {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+main .text h1 {
+    text-align: center;
+}
+
+main .text p {
+    width: 400px;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+}
+
+form {
+    background-color: gray;
 }
