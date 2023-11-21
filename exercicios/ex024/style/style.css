@@ -53,5 +53,69 @@ main .text p {
 }
 
 form {
-    background-color: gray;
+    height: 210px;
+    
+}
+
+form div.login {
+    background-color: #025951;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+form div.login input {
+    background-color: rgba(128, 128, 128, 0.847);
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 35px 10px 10px;
+}
+
+form div.login input::placeholder {
+    font-weight: bold;
+    font-size: 1em;
+    color: #000000c2;
+}
+
+form div.login span {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form div.goin input {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #024959;
+    font-weight: bold;
+    font-size: 1em;    
+}
+
+form div.goin input#entrar {
+    color: #fff;
+    cursor: pointer;
+}
+
+form div.goin input#esqueci {
+    color: #024959;
+    background-color: transparent;
+    border: 1px  solid #024959;
+    cursor: pointer;
 }
