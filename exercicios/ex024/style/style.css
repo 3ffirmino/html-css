@@ -22,7 +22,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    overflow: hidden;    
 }
 
 main .developerimage {
@@ -32,12 +32,10 @@ main .developerimage {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+
 }
 
 main .text {
-    background-color: #fff;
     padding-top: 20px;
 }
 
@@ -58,7 +56,7 @@ form {
 }
 
 form div.login {
-    background-color: #025951;
+    background-color: #034159;
     display: flex;
     margin: auto;
     width: 90%;
@@ -71,7 +69,7 @@ form div.login {
 }
 
 form div.login input {
-    background-color: rgba(128, 128, 128, 0.847);
+    background-color: #777777;
     width: 90%;
     height: 40px;
     border-radius: 10px;
@@ -90,7 +88,7 @@ form div.login input::placeholder {
 
 form div.login span {
     font-size: 30px;
-    color: #fff;
+    color: #000;
     cursor: pointer;
 }
 
@@ -111,6 +109,12 @@ form div.goin input {
 form div.goin input#entrar {
     color: #fff;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+form div.goin input#entrar:hover {
+    border: 2px solid #000;
+
 }
 
 form div.goin input#esqueci {
